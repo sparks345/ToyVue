@@ -1,9 +1,9 @@
 # ToyVue
 
-reference link:
-- (vue的双向绑定原理及实现)[https://www.cnblogs.com/chenhuichao/p/10818396.html]
-- (Object.defineProperty)[https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty]
-- (Prototype)[https://www.jianshu.com/p/08cd50e975d3]
+## Reference Link:
+- [vue的双向绑定原理及实现](https://www.cnblogs.com/chenhuichao/p/10818396.html)
+- [Object.defineProperty](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty)
+- [Prototype](https://www.jianshu.com/p/08cd50e975d3)
 
 ## License
 MIT License
