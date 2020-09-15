@@ -1,4 +1,4 @@
-import { Observer } from './js/observer.js';
+import { Observer, Dep } from './js/observer.js';
 import { Watcher } from './js/watcher.js';
 import { Compile } from './js/compile.js';
 import { SelfVue } from './js/index.js';
@@ -10,6 +10,7 @@ import { SelfVue } from './js/index.js';
 // ob.defineReactive(data, 'name', 'Abner');
 
     // let ob = new Observer();
+    export const depContainer = new Dep();
     let selfVue = new SelfVue({
         el: '#app',
         data: {

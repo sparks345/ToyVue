@@ -1,10 +1,12 @@
 import { Dep } from './observer.js';
+import { depContainer } from '../main.js';
 export class Watcher {
     constructor(vm, exp, cb) {
         this.cb = cb;
         this.vm = vm;
         this.exp = exp;
         this.value = this.get();
+        // this.depContainer = new Dep();
     }
     update() {
         this.run();
@@ -18,9 +20,11 @@ export class Watcher {
         }
     }
     get() {
-        new Dep().target = this;
+        // new Dep().target = this;
+        depContainer.target = this;
         let value = this.vm.data[this.exp];
-        new Dep().target = Object.create(null);
+        // new Dep().target = Object.create(null);
+        // depContainer.target = Object.create(null);
         return value;
     }
 }

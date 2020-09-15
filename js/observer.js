@@ -4,6 +4,7 @@
 //     this.walk(data);
 // }
 import { Watcher } from './watcher.js';
+import { depContainer } from '../main.js';
 export class Observer {
     constructor(data) {
         this.data = data;
@@ -23,8 +24,8 @@ export class Observer {
             configurable: true,
             get: function getter() {
                 console.log('Observer.get');
-                if (dep.target) {
-                    dep.addSub(dep.target);
+                if (depContainer.target) {
+                    dep.addSub(depContainer.target);
                 }
                 return val;
             },
